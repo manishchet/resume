@@ -1,0 +1,234 @@
+  %-------------------------
+  % Resume in Latex
+  % Author : Manishkumar
+  % Based off of: https://github.com/sb2nov/resume
+  % License : MIT
+  %------------------------
+
+  % https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+
+  \documentclass[letterpaper,10pt]{article}
+
+  \usepackage{latexsym}
+  \usepackage[empty]{fullpage}
+  \usepackage{titlesec}
+  \usepackage{marvosym}
+  \usepackage[usenames,dvipsnames]{color}
+  \usepackage{verbatim}
+  \usepackage{enumitem}
+  \usepackage[hidelinks]{hyperref}
+  \usepackage{fancyhdr}
+  \usepackage[english]{babel}
+  \usepackage{tabularx}
+  \input{glyphtounicode}
+
+
+  %----------FONT OPTIONS----------
+  % sans-serif
+  % \usepackage[sfdefault]{FiraSans}
+  % \usepackage[sfdefault]{roboto}  
+  % \usepackage[sfdefault]{noto-sans}
+  % \usepackage[default]{sourcesanspro}
+  % serif
+  % \usepackage{CormorantGaramond}
+  % \usepackage{charter}
+
+
+  \pagestyle{fancy}
+  \fancyhf{} % clear all header and footer fields
+  \fancyfoot{}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+
+  % Adjust margins
+  \addtolength{\oddsidemargin}{-0.5in}
+  \addtolength{\evensidemargin}{-0.5in}
+  \addtolength{\textwidth}{1in}
+  \addtolength{\topmargin}{-.7in}
+  \addtolength{\textheight}{1.0in}
+
+  \urlstyle{same}
+
+  \raggedbottom
+  \raggedright
+  \setlength{\tabcolsep}{0in}
+
+  % Sections formatting
+  \titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+  }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+  % Ensure that generate pdf is machine readable/ATS parsable
+  \pdfgentounicode=1
+
+%-------------------------%-------------------------------%-------------------------------%-----
+  % Custom commands
+  \newcommand{\resumeItem}[1]{
+    \item\small{
+      {#1 \vspace{-2pt}}
+    }
+  }
+
+  \newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+      \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+      %  \textit{\small#3} & \textit{\small #4} \\
+      \end{tabular*}\vspace{-7pt}
+  }
+
+
+
+  \newcommand{\resumeProjectHeading}[2]{
+      \item
+      \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1  \\
+      \end{tabular*}\vspace{-7pt}
+  }
+
+
+    \newcommand{\resumeEducationheading}[4]{
+    \vspace{-2pt}\item
+      \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+      %  \textit{\small#3} & \textit{\small #4} \\
+      \end{tabular*}\vspace{-15pt}
+  }
+
+  \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+  \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+  \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+  \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+  \newcommand{\resumeItemListStart}{\begin{itemize}}
+  \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+  %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{document}
+
+%----------HEADING----------%-------------------------------%-----------------------------------
+  \begin{center}
+      \textbf{\Huge \scshape ManishKumar Chetpalli} \\ \vspace{4pt}
+      \small  +91 8691902040 $|$ \href{mailto:chetpallimanishkumar@gmail.com}{{ chetpallimanishkumar@gmail.com}}  $|$   
+      \href{https://www.linkedin.com/in/manishkumarchetpalli}{linkedin.com/in/manishkumarchetpalli/} $|$
+      \href{https://github.com/manishchet}{ github.com/manishchet} 
+  \end{center}
+
+
+
+
+%-----------SUMMARY-----------%-------------------------------%---------------------------------
+  \section{Summary}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+  \item 
+  Data engineer with 3 years of experience building scalable data pipelines using technologies like Spark, Flink, Kafka, and Airflow. Leveraged expertise in data engineering to enhance operational efficiency and reduce processing times for major retail platforms. Currently pursuing a master’s in business analytics to merge advanced analytics with technical skills and drive future data-driven innovations.
+  \end{itemize}
+
+%-----------TECHINICAL SKILLS%-------------------------------%----------------------------------
+  \section{Skills}
+   \begin{itemize}[leftmargin=0.15in, label={}]
+      \small{\item{
+       \textbf{Big Data Technologies}{:\hspace{0.49cm}     HDFS, YARN, Zookeeper, Hive, Spark, Kafka, Kerberos, Nifi, Airflow, Iceberg, Ignite, Trino(Presto)    } \\
+       \textbf{Programming Languages}{:\hspace{0.09cm}   Python, SQL, Spark, Pyspark} \\
+       \textbf{Streaming Technology}{:\hspace{0.51cm} Kafka, Spark structured streaming, Flink streaming} \\
+       \textbf{Cloud computing}{:\hspace{1.45cm}Azure, Databricks, AWS } \\
+       \textbf{Data Engineering}{:\hspace{1.25cm} Data Processing, Data Ingestion, Data Modelling, ETL/ELT }\\
+       \textbf{DevOps}{:\hspace{2.98cm}Jenkins (CI/CD) Tools, Docker, Kubernetes, Gitlab, Grafana, Prometheus} \\
+       
+       
+      }}
+   \end{itemize}
+
+
+
+
+%-----------EXPERIENCE-----------%-------------------------------%------------------------------
+  \section{Experience}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {Reliance Jio $|$ Associate Data Engineer }{January 2022 - Present}
+        {Associate Data Engineer}{Navi Mumbai, India}
+        \resumeItemListStart
+        \resumeItem{Implemented and administered \textbf{Hadoop distributions} like Cloudera Data Platform (CDP) and Hortonworks Data Platform (HDP), enhancing \textbf{data workflows} and \textbf{analytics efficiency.}}
+        \resumeItem{Secured on-premise environments with robust configurations and timely updates, minimizing system vulnerabilities.}
+        \resumeItem{Optimized and automated development and deployment using \textbf{Jenkins, Docker, and Kubernetes} for efficient DevOps practices. }
+        \resumeItem{Collaborated with cross-functional teams to optimize \textbf{data pipelines}, improving data availability \textbf{by 20\%.} }
+        \resumeItem{Designed scalable frameworks leveraging \textbf{Apache Kafka, Flink streaming}, and \textbf{Spark} for real-time and large-scale data solutions.}
+      \resumeItemListEnd     
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------%-------------------------------%-------------------------------
+  \section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Real-time Data Streaming Pipeline with Oracle Golden Gate and HANA} $|$ {Kafka, Flink streaming}}{January 2023 - March 2023}
+        \resumeItemListStart
+          \resumeItem{Designed, Managed and Configured a \textbf{10-node Apache Kafka cluster} with SASL-SCRAM-SHA-512 for secure, fault-tolerant data replication between Oracle GoldenGate and SAP HANA using Apache Flink streaming.}
+          \resumeItem{Optimized Kafka  \textbf{cluster performance by 25\%} with tools like \textbf{Cruise Control, Grafana, and Kafka UI.}}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Realtime dashboard with Apache Ignite} $|$ {Apache Ignite, Spark}}{July 2022 - September 2022}
+        \resumeItemListStart
+          \resumeItem{Designed, Configured and managed a \textbf{3-node Ignite cluster} to enhance order dashboards for JioMart and AJIO, \textbf{achieving a 45\% performance boost} and real-time updates.}
+        \resumeItemListEnd
+        
+        \resumeProjectHeading
+        {\textbf{Scalable Real-Time Framework for Reliance Retail} $|$ {Spark, Kafka, Python}}{July 2022 - September 2022}
+        \resumeItemListStart
+          \resumeItem{Boosted \textbf{data efficiency by 30\%} using Apache Kafka and Spark for high-volume data ingestion.}
+          \resumeItem{Improved insights by \textbf{optimizing Apache Spark ETL processes}, reducing latency by 30\%.}
+        \resumeItem{Deployed a secure  \textbf{5-node Apache Airflow cluster} with LDAP for workflow management. Utilized Airflow to orchestrate Spark jobs, perform server sanity checks, and \textbf{automate data pipelines}, ensuring reliable and efficient processing across diverse workflows.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Data lake Integration with Apache Iceberg} $|$ {Spark, Kafka}}{July 2022 - September 2022}
+        \resumeItemListStart
+          \resumeItem{Integrated Apache Iceberg into HDP 2.6, enabling advanced features like \textbf{partition evolution and time travel.}}
+          \resumeItem{Replaced SCD Type logic in Spark with Apache Iceberg, boosting data mart reports \textbf{speed by 60\%} for Jio Mart and AJIO.}
+        \resumeItemListEnd
+
+        
+         \resumeProjectHeading
+        {\textbf{Container Orchestration for Scalable Application Deployments} $|$ {Docker, Kubernetes}}{July 2022 - September 2022}
+        \resumeItemListStart
+          \resumeItem{Deployed \textbf{Trino query engine with Docker Swarm}, enhancing Tableau query \textbf{performance by 55\%.}}
+         \resumeItem{Streamlined the deployment of 50+ applications, achieving a 25\% efficiency gain.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Hybrid Cloud Kafka Integration} $|$ {Kafka, GCP, AWS, Azure}}{July 2022 - September 2022}
+        \resumeItemListStart
+          \resumeItem{Engineered and developed a \textbf{hybrid cloud solution} by establishing private link connectivity between two cloud entities and an on-premise Kafka ecosystem, enabling secure and efficient real-time data pipelines.}
+        \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------%-------------------------------%-------------------------------
+  \section{Education}
+    \resumeSubHeadingListStart
+      \resumeEducationheading
+        {University of Mumbai $|$  {Bachelor of Engineering in Electronics and Telecommunication}}{2014-2018}
+        {Bachelor of Engineering in Electronics and Telecommunication}{2014-2018}
+        \resumeSubheading
+        {Data Science Masters Program $|$  {GreyAtom School of Data Science}}{2018-2019}
+        {GreyAtom School of Data Science}{2018-2019}
+        
+    \resumeSubHeadingListEnd
+
+%-----------Awards and Certficates-----------%-------------------------------%------------------
+  \section{Awards and Certificates}
+    \resumeSubHeadingListStart
+      \resumeEducationheading
+        {Star Performer of the Year $|$  {Reliance Retail}}{2023}
+        {Bachelor of Engineering in Electronics and Telecommunication}{2014-2018}
+        \resumeSubheading
+        {Spotlight of the Year $|$  {Reliance Retail}}{2022}
+        {GreyAtom School of Data Science}{2018-2019}
+      
+    \resumeSubHeadingListEnd
+%-------------------------------%-------------------------------%-------------------------------
+
+  
+\end{document}
